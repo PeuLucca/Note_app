@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/txtHra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="05:50 PM"
+        android:textAlignment="textEnd"
+        android:textAllCaps="false"
+        android:textColor="#434343"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtStatusAdapter"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescricaoAdapter" />
+
+    <TextView
+        android:id="@+id/txtStatusAdapter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Status: Não concluído"
+        android:textAllCaps="false"
+        android:textColor="#434343"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDescricaoAdapter" />
+
+    <TextView
+        android:id="@+id/txtTituloAdapter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-6dp"
+        android:text="Título"
+        android:textAllCaps="true"
+        android:textColor="#393939"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imgFav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDescricaoAdapter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Descrição"
+        android:textAllCaps="false"
+        android:textColor="#434343"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/txtData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloAdapter" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStatusAdapter"
+        app:srcCompat="@drawable/divisor" />
+
+    <TextView
+        android:id="@+id/txtData"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="01/01/0001"
+        android:textAlignment="textEnd"
+        android:textAllCaps="false"
+        android:textColor="#434343"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/txtHra"
+        app:layout_constraintEnd_toEndOf="@+id/txtHra"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloAdapter" />
+
+    <TextView
+        android:id="@+id/imgFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="⭐"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/txtData"
+        app:layout_constraintEnd_toEndOf="@+id/txtData"
+        app:layout_constraintStart_toEndOf="@+id/txtDescricaoAdapter"
+        app:layout_constraintTop_toTopOf="@+id/txtTituloAdapter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

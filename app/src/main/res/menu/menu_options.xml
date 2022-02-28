@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/pesquisar_por_nome"
+        android:title="@string/pesqPornomePT"
+        android:orderInCategory="1"
+        />
+
+    <item
+        android:id="@+id/itemOrdenarPadrao"
+        android:title="@string/ordenarPadraoPT"
+        android:orderInCategory="1"
+        />
+
+    <item
+        android:id="@+id/itemOrdenarA_Z"
+        android:title="@string/ordenarA_zPT"
+        android:orderInCategory="1"
+        />
+
+    <item
+        android:id="@+id/itemOrdenarData"
+        android:title="@string/ordenarDataPT"
+        android:orderInCategory="1"
+        />
+
+    <item
+        android:id="@+id/itemOrdenarStatusConcluido"
+        android:title="@string/filtrarPorSttsConcluidoPT"
+        android:orderInCategory="1"
+        />
+
+    <item
+        android:id="@+id/itemOrdenarStatusNaoConcluido"
+        android:title="@string/filtrarPorSttsNConcluidoPT"
+        android:orderInCategory="1"
+        />
+
+    <item
+        android:id="@+id/itemOrdenarSemStatus"
+        android:title="@string/filtrarPorSemSttsPT"
+        android:orderInCategory="1"
+        />
+
+
+
+    <item
+        android:id="@+id/itemExibirFav"
+        android:title="@string/filtrarPorFavoritoPT"
+        android:orderInCategory="1"
+        />
+
+    <item
+        android:id="@+id/avaliar"
+        android:title="@string/avalie_o_App_estrelinhas"
+        android:orderInCategory="1"
+        />
+
+</menu>

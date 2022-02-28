@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example_2_060303.note.activity.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#43302a"
+        android:elevation="0dp"
+        android:theme="@style/Theme.Note.AppBarOverlay">
+
+        <ImageView
+            android:id="@+id/imgLogoPrincipal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            app:srcCompat="@drawable/img_fundo_note" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="51dp"
+            android:layout_height="17dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="-25dp"
+            android:layout_marginRight="0dp"
+            android:background="#43302a"
+            android:elevation="0dp"
+            android:theme="@style/Theme.Note.PopupOverlay"
+            android:visibility="visible"
+            app:popupTheme="@style/Theme.Note.PopupOverlay"
+            tools:visibility="visible" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include
+        layout="@layout/content_main"
+        android:elevation="0dp" />
+
+   <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginBottom="16dp"
+        app:backgroundTint="#61463E"
+        app:srcCompat="@drawable/ic_add_24"
+        tools:ignore="SpeakableTextPresentCheck" /> -->
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/addTarefaGeral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="10dp"
+            app:menu_colorNormal="#61463E"
+            app:menu_colorPressed="#61463E"
+            app:menu_icon="@drawable/ic_add_24">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/addTarefa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_24"
+                app:fab_colorNormal="#61463E"
+                app:fab_label="@string/criarTarefaNormal"
+                android:onClick="addTarefa"
+                app:fab_colorPressed="#61463E"
+                app:fab_size="mini">
+
+            </com.github.clans.fab.FloatingActionButton>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/addTarefaRapida"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_create_24"
+                app:fab_colorNormal="#61463E"
+                app:fab_label="@string/criarTarefaPostIt"
+                android:onClick="addTarefaRapida"
+                app:fab_colorPressed="#61463E"
+                app:fab_size="mini">
+
+            </com.github.clans.fab.FloatingActionButton>
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

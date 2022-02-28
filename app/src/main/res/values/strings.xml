@@ -1,0 +1,151 @@
+<resources>
+    <string name="app_name">Note</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="facebook_app_id">1872727672914335</string>
+    <string name="facebook_client_token">1542faddfa766ecd2f8e46253daa82ca</string>
+
+    <string name="atencaoPT">Atenção</string>
+
+    <string name="salvarAlteracoesAntesDeSairPT">Deseja salvar as alterações antes de sair?</string>
+
+    <string name="simPT">Sim</string>
+
+    <string name="naoPT">Não</string>
+
+    <string name="confirmarPT">Confirmar</string>
+
+    <string name="cancelarPT">Cancelar</string>
+
+    <string name="insiraCamposObrigatoriosPT">Insira os campos obrigatórios</string>
+
+    <string name="tarefaSalvaComSucessoPT">Tarefa salva com sucesso</string>
+
+    <string name="erroAoSalvarTarefaPT">Erro ao salvar tarefa</string>
+
+    <string name="tarefaAtualizadaComSucessoPT">Tarefa atualizada com sucesso</string>
+
+    <string name="erroAtualizarTarefaPT">Erro ao atualizar tarefa</string>
+
+    <string name="salveAnotacaoParaFavoritarPT">Salve a anotação para favoritar</string>
+
+    <string name="favoritadoPT">Favoritado</string>
+
+    <string name="desfavoritadoPT">Desfavoritado</string>
+
+    <string name="erroAoFav_DesfPT">Erro ao favoritar/desfavoritar tarefa</string>
+
+    <string name="salveTarefaFav_DesfPT">Salve a tarefa e então tente favoritar/desfavoritar</string>
+
+    <string name="salveTarefaAntesDeAlterarPT">Salve a tarefa antes de alterar seu status</string>
+
+    <string name="confExclusaoPT">Confirmar exclusão</string>
+
+    <string name="desejaExcluirAnotacaoPT">Deseja excluir esta anotação: </string>
+    <string name="desejaExcluirAnotacaoPT2">Deseja excluir esta anotação?</string>
+
+    <string name="tarefaExcluidaPT">Tarefa excluída</string>
+
+    <string name="erroAoExcluirTarefaPT">Erro ao excluir tarefa</string>
+
+    <string name="paraDeletarPrecisaSalvarPT">Para deletar uma tarefa você precisa tê-la salva</string>
+
+    <string name="necessarioTerAnotacaoSalvaParaCompartilharPT">É necessário ter anotações salvas para que possam ser compartilhadas</string>
+
+    <string name="compartilhadoAtravesdoNotePT">Compartilhado através do Bloco de notas - Note:</string>
+
+    <string name="tituloPT">Título: </string>
+
+    <string name="descricaoPT">Descrição: </string>
+
+    <string name="conteudoPT">Conteudo: </string>
+
+    <string name="baixeAgoraEmPT">Baixe agora em https://play.google.com/store/apps/details?id=com.example_2_060303.note</string>
+
+    <string name="estaCurtindoAppPT">Está curtindo o app?</string>
+
+    <string name="ajudeEnviandoFeedbackPlayStorePT">Ajude-nos e avalie enviando seu feedback para Play Store! ⭐⭐⭐⭐⭐</string>
+
+    <string name="nuncaPT">Nunca</string>
+
+    <string name="avaliarAgoraPT">Avaliar agora</string>
+
+    <string name="talvezMaisTardePT">Talvez mais tarde</string>
+
+    <string name="concluidoPT">Concluído</string>
+
+    <string name="naoConcluidoPT">Não concluído</string>
+
+    <string name="statusPT">Status: </string>
+
+    <string name="naoPercaNadaAnoteECompartilhePT">Não perca nada, anote e compartilhe!</string>
+
+    <string name="vcJaFezTudoOqPlanejouHjPT">Você já fez tudo que programou para hoje?</string>
+
+    <string name="comeceSeu1RascunhoPT">Comece aqui o primeiro rascunho de suas ideias!</string>
+
+    <string name="lembreDeOrganizarNotasPT">Lembre-se de organizar suas notas!</string>
+
+    <string name="nEsquecaDasSuasTarefasPT">Não esqueça de suas tarefas!✍✍</string>
+
+    <string name="salvarPT">Salvar</string>
+
+    <string name="FavoritarPT">Favoritar</string>
+
+    <string name="deletarTarefaPT">Deletar tarefa</string>
+
+    <string name="compartilharNotaPT">Compartilhar nota</string>
+
+    <string name="semSttsPT">Sem status</string>
+
+    <string name="pesqPornomePT">Pesquisar por nome</string>
+
+    <string name="ordenarPadraoPT">Ordenar padrão</string>
+
+    <string name="ordenarA_zPT">Ordenar por A-Z</string>
+
+    <string name="ordenarDataPT">Ordenar por data</string>
+
+    <string name="filtrarPorSttsConcluidoPT">Filtrar por Status Concluído</string>
+
+    <string name="filtrarPorSttsNConcluidoPT">Filtrar por Status Não Concluído</string>
+
+    <string name="filtrarPorSemSttsPT">Filtrar por Sem Status</string>
+
+    <string name="filtrarPorFavoritoPT">Filtrar por favoritos</string>
+
+    <string name="configuracoesPT">Configurações</string>
+
+    <string name="tituloEdit">Titulo ex: filmes para assistir</string>
+
+    <string name="descricaoEdit">Descrição ex: ação, aventura, suspense</string>
+
+    <string name="anotacaoEdit">Anotação...</string>
+
+    <string name="textTarefasPostit">Suas tarefas post-it ficam aqui ✍✍</string>
+
+    <string name="textTarefasNormais">Suas tarefas normais ficam aqui ✍✍</string>
+
+    <string name="criarTarefaNormal">Criar tarefa normal</string>
+
+    <string name="criarTarefaPostIt">Criar tarefa Post-it</string>
+
+    <string name="avalieNossoApp">Avalie nosso app</string>
+
+    <string name="avalieNaPlayStore">Se você está gostando de usar o app, nos ajude enviando sua avaliação na Play Store</string>
+
+    <string name="avalie_o_App_estrelinhas">⭐ Avalie o app ⭐</string>
+
+    <string name="textSplash">Compartilhe suas notas com quem e onde quiser</string>
+
+    <string name="textDesenvolvedor">by Pedro de Lucca</string>
+
+</resources>

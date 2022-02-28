@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example_2_060303.note">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Note">
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.Note.NoActionBar"/>
+        <activity
+            android:name=".activity.AddTarefaRapida"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PesquisarTarefa"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ClientToken"
+            android:value="@string/facebook_client_token" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1872727672914335"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.AddTarefa"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/Theme.Note.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".model.Alarm" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <!-- id de teste: ca-app-pub-3940256099942544~3347511713
+            -->
+
+    </application>
+
+</manifest>

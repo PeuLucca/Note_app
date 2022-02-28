@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.26461538461538464" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/drawable-v24/layoutTarefaRapida_bg.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/drawable-v24/layout_tarefa_rapida_bg.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/drawable/ic_add_24.xml" value="0.24537037037037038" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/drawable/ic_baseline_add_task_24.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/drawable/ic_baseline_border_color_24.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/drawable/ic_check_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/drawable/ic_checked_24.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/drawable/ic_delete_24.xml" value="0.2490740740740741" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/drawable/ic_save_24.xml" value="0.26875" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/drawable/ic_share_24.xml" value="0.26461538461538464" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/drawable/layout_bg.xml" value="0.26461538461538464" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/layout/activity_add_tarefa.xml" value="0.264" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/layout/activity_add_tarefa_rapida.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/layout/activity_pesquisar_tarefa.xml" value="0.2375" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/layout/content_main.xml" value="0.264" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/layout/fragment_first.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/layout/layout_bg.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/layout/list_adapter.xml" value="0.4" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/layout/list_adapter_tarefa_rapida.xml" value="0.4" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/layout/lista_adapter.xml" value="0.4" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/layout/teste.xml" value="0.264" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/menu/menu.xml" value="0.2388888888888889" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/menu/menu_add_tarefa.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/menu/menu_add_tarefa_rapida.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/menu/menu_main.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/menu/menu_options.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26875" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.26875" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/mipmap-anydpi-v26/ic_logo_app.xml" value="0.26875" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/mipmap-anydpi-v26/ic_logo_app2.xml" value="0.26875" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/mipmap-anydpi-v26/ic_logo_app2_round.xml" value="0.26875" />
+        <entry key="..\:/Users/Pedro/Desktop/Android/Note/app/src/main/res/mipmap-anydpi-v26/ic_logo_app_round.xml" value="0.26461538461538464" />
+        <entry key="..\:/Users/Pedro/Desktop/Importante/Apps Android/Note/app/src/main/res/drawable-v24/layout_tarefa_rapida_bg.xml" value="0.25925925925925924" />
+        <entry key="..\:/Users/Pedro/Desktop/Importante/Apps Android/Note/app/src/main/res/layout/activity_main.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Importante/Apps Android/Note/app/src/main/res/layout/content_main.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Importante/Apps Android/Note/app/src/main/res/layout/list_adapter.xml" value="0.536" />
+        <entry key="..\:/Users/Pedro/Desktop/Importante/Apps Android/Note/app/src/main/res/layout/list_adapter_tarefa_rapida.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Importante/Apps Publicados/Bloco de Notas - Note/code/note-master/app/src/main/res/layout/activity_add_tarefa.xml" value="0.2520833333333333" />
+        <entry key="..\:/Users/Pedro/Desktop/Importante/Apps Publicados/Bloco de Notas - Note/code/note-master/app/src/main/res/layout/activity_main.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Importante/Apps Publicados/Bloco de Notas - Note/code/note-master/app/src/main/res/layout/activity_splash.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Importante/Apps Publicados/Bloco de Notas - Note/code/note-master/app/src/main/res/layout/content_main.xml" value="0.4" />
+        <entry key="..\:/Users/Pedro/Desktop/Importante/Apps Publicados/Bloco de Notas - Note/code/note-master/app/src/main/res/layout/list_adapter_tarefa_rapida.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Importante/Apps Publicados/Bloco de Notas - Note/code/note-master/app/src/main/res/layout/rate_us_dialog_layout.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/Importante/Apps Publicados/Bloco de Notas - Note/code/note-master/app/src/main/res/menu/menu_options.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/note-master/app/src/main/res/drawable/round_back_blue_10.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/Pedro/Desktop/note-master/app/src/main/res/layout/activity_add_tarefa.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/note-master/app/src/main/res/layout/rate_us_dialog_layout.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Pedro/Desktop/note-master/app/src/main/res/menu/menu_options.xml" value="0.2526041666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
