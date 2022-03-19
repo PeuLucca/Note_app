@@ -12,6 +12,8 @@ public class Tarefa implements Serializable {
     private String data;
     private String horario;
     private Long favorito;
+    private String senha;
+    private String dicaSenha;
 
     public Long getId() {
         return id;
@@ -75,5 +77,21 @@ public class Tarefa implements Serializable {
 
     public void setFavorito(Long favorito) {
         this.favorito = favorito;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public String getDicaSenha() {
+        return dicaSenha;
+    }
+
+    public void setDicaSenha(String dicaSenha) {
+        this.dicaSenha = dicaSenha;
     }
 }

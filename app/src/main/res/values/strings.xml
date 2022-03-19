@@ -148,4 +148,52 @@
 
     <string name="textDesenvolvedor">by Pedro de Lucca</string>
 
+    <string name="nPossivelFavoritar">Não é possível favoritar uma tarefa com senha</string>
+
+    <string name="salvaTarefaAntesDefinirSenha">Salve sua tarefa antes de definir uma senha</string>
+
+    <string name="senhaRemovidaComSucesso">Senha removida com sucesso</string>
+
+    <string name="senhaSalvaComSucesso">Senha salva com sucesso</string>
+
+    <string name="erroAoSalvarSenha">Erro ao salvar senha</string>
+
+    <string name="salvar">Salvar</string>
+
+    <string name="insiraDicaSenha">Insira a dica de senha</string>
+
+    <string name="insiraQuantidadeDigitosNecessarios">Insira a quantidade de dígitos necessários</string>
+
+    <string name="insiraQuantidadeDigitosNecessariosESenha">Insira a quantidade de dígitos necessários e a dica de senha</string>
+
+    <string name="atencao">Atenção!</string>
+
+    <string name="desejaRemoverSenhaOuTrocarSenha">Deseja remover a senha ou trocar de senha?</string>
+
+    <string name="trocarDeSenha">Trocar de senha</string>
+
+    <string name="removerSenha">Remover a senha</string>
+
+    <string name="desejaCompartilharTarefaSalvaComSenha">Tem certeza que deseja compartilhar uma tarefa salva com senha?</string>
+
+    <string name="crieSenhaParaTarefa">Crie a senha para a tarefa</string>
+
+    <string name="senhaDeveTer5">Senha deve ter no mínimo 5 dígitos</string>
+
+    <string name="digiteSuaSenha">Digite sua senha ex: 12345</string>
+
+    <string name="dicaDeSenha">Dica de senha</string>
+
+    <string name="dicaDeSenhaEx">Dica de senha  ex: aniversario de um parente</string>
+
+    <string name="entrar">Entrar</string>
+
+    <string name="senhaIncorreta">Senha incorreta</string>
+
+    <string name="filtrarTarefasComSenhas">Filtrar por tarefas com senhas</string>
+
+    <string name="addSenha">Adicionar senha</string>
+
+    <string name="insiraASenha">Insira a senha</string>
+
 </resources>

@@ -19,6 +19,14 @@
         />
 
     <item
+        android:id="@+id/itemSenha"
+        android:title="Adicionar senha"
+        app:showAsAction="always"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_key_24"
+        />
+
+    <item
         android:id="@+id/itemDelete"
         android:title="@string/deletarTarefaPT"
         app:showAsAction="always"

@@ -3,17 +3,20 @@ package com.example_2_060303.note.adapter;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
 import android.widget.Filterable;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example_2_060303.note.R;
+import com.example_2_060303.note.helper.DaoTarefa;
 import com.example_2_060303.note.model.Tarefa;
 
 import java.util.ArrayList;
@@ -50,30 +53,53 @@ public class AdapterTarefa extends RecyclerView.Adapter<AdapterTarefa.MyViewHold
         Tarefa tarefa = listaTarefa.get( position );
         holder.titulo.setText( tarefa.getTitulo() );
 
-        if( !tarefa.getDescricao().isEmpty() ){ // se tiver descricao entao mostra a descricao
-            holder.descricao.setText( tarefa.getDescricao() );
-        }else { // se não tiver descricao entao remove a visibilidade
-            holder.descricao.setVisibility( View.GONE );
-        }
+        // verificar se tem senha
+        DaoTarefa daoTarefa = new DaoTarefa(context.getApplicationContext() );
+        String tarefaSenha = "";
+        tarefaSenha = daoTarefa.verificarSenha( tarefa.getTitulo() ,tarefa.getConteudo() );
+        if( tarefaSenha.equals("") ){
 
-        if( tarefa.getStatus().equals(100L) ){ // tarefa sem status
-            holder.status.setText( R.string.semSttsPT );
-        }else {
-            if(tarefa.getStatus().equals(0L)){
-                holder.status.setTextColor( Color.parseColor("#E43232") );
-                holder.status.setText( context.getResources().getString(R.string.statusPT) + " "+ context.getResources().getString(R.string.naoConcluidoPT) );
-            }else if( tarefa.getStatus().equals(1L) ){
-                holder.status.setTextColor( Color.parseColor("#55AB48") );
-                holder.status.setText( context.getResources().getString(R.string.statusPT) + " " + context.getResources().getString(R.string.concluidoPT) );
 
+            if( tarefa.getDescricao().isEmpty() ){ // se tiver descricao entao mostra a descricao
+                holder.descricao.setVisibility( View.GONE );
+            }else { // se não tiver descricao entao remove a visibilidade
+
+                holder.descricao.setText( tarefa.getDescricao() );
             }
-        }
 
-        holder.data.setText( tarefa.getData() );
-        holder.hra.setText( tarefa.getHorario() );
+            if( tarefa.getStatus().equals(100L) ){ // tarefa sem status
+                holder.status.setText( R.string.semSttsPT );
+            }else {
+                if(tarefa.getStatus().equals(0L)){
+                    holder.status.setTextColor( Color.parseColor("#E43232") );
+                    holder.status.setText( context.getResources().getString(R.string.statusPT) + " "+ context.getResources().getString(R.string.naoConcluidoPT) );
+                }else if( tarefa.getStatus().equals(1L) ){
+                    holder.status.setTextColor( Color.parseColor("#55AB48") );
+                    holder.status.setText( context.getResources().getString(R.string.statusPT) + " " + context.getResources().getString(R.string.concluidoPT) );
 
-        if( !tarefa.getFavorito().equals(0L) ){
-            holder.imgFav.setVisibility(View.VISIBLE);
+                }
+            }
+
+            holder.data.setText( tarefa.getData() );
+            holder.hra.setText( tarefa.getHorario() );
+
+            if( !tarefa.getFavorito().equals(0L) ){
+                holder.imgFav.setVisibility(View.VISIBLE);
+            }
+
+        }else { // com senha
+
+            holder.data.setVisibility( View.GONE );
+            holder.hra.setVisibility(View.GONE);
+            holder.status.setVisibility(View.GONE);
+            holder.imgFav.setVisibility(View.GONE);
+            holder.descricao.setVisibility(View.GONE);
+            holder.titulo.setVisibility(View.GONE);
+
+            holder.txtConfidencial.setText( tarefa.getTitulo() );
+            holder.txtConfidencial.setVisibility(View.VISIBLE);
+            holder.imgSenha.setVisibility(View.VISIBLE);
+
         }
     }
 
@@ -120,8 +146,9 @@ public class AdapterTarefa extends RecyclerView.Adapter<AdapterTarefa.MyViewHold
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
-        private TextView titulo,descricao,status,data,hra;
+        private TextView titulo,descricao,status,data,hra,txtConfidencial;
         private TextView imgFav;
+        private ImageView imgSenha;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -131,8 +158,10 @@ public class AdapterTarefa extends RecyclerView.Adapter<AdapterTarefa.MyViewHold
             status = itemView.findViewById(R.id.txtStatusAdapter1);
             data = itemView.findViewById(R.id.txtData1);
             hra = itemView.findViewById(R.id.txtHra1);
+            txtConfidencial = itemView.findViewById(R.id.txtConfidencial);
 
             imgFav = itemView.findViewById(R.id.imgFav1);
+            imgSenha = itemView.findViewById(R.id.imgSenha);
         }
     }
 }

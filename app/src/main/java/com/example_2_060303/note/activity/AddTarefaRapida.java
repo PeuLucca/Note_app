@@ -31,7 +31,7 @@ import java.util.List;
 public class AddTarefaRapida extends AppCompatActivity {
 
     private EditText titulo, descricao, conteudo;
-    private String StringTitulo,StringConteudo;
+    private String StringConteudo;
     private Tarefa_Rapida tarefaAtual;
     private String cont="";
 
@@ -39,6 +39,10 @@ public class AddTarefaRapida extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_tarefa);
+
+        titulo = findViewById(R.id.txtTitulo);
+        descricao = findViewById(R.id.txtDescricao);
+        conteudo = findViewById(R.id.txtConteudo);
 
         // Google Ads
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
@@ -58,9 +62,6 @@ public class AddTarefaRapida extends AppCompatActivity {
             }
         }, 1000);
 
-        titulo = findViewById(R.id.txtTitulo);
-        descricao = findViewById(R.id.txtDescricao);
-        conteudo = findViewById(R.id.txtConteudo);
 
         titulo.setVisibility( View.GONE );
         descricao.setVisibility( View.GONE );
@@ -201,43 +202,84 @@ public class AddTarefaRapida extends AppCompatActivity {
 
         if( !conteudo.getText().toString().equals("") ){
 
-            List<Tarefa_Rapida> lista = new ArrayList<>();
+            if( tarefaAtual == null ){
+                List<Tarefa_Rapida> lista = new ArrayList<>();
 
-            lista = dao.verificarTarefa( conteudo.getText().toString() );
+                lista = dao.verificarTarefa( conteudo.getText().toString() );
 
-            if( !lista.isEmpty() ) {
+                if( !lista.isEmpty() ) {
 
-                AlertDialog.Builder dialog = new AlertDialog.Builder( AddTarefaRapida.this );
-                dialog.setTitle( getApplicationContext().getResources().getString(R.string.confExclusaoPT) + "\n" );
-                dialog.setMessage( R.string.desejaExcluirAnotacaoPT2 );
+                    AlertDialog.Builder dialog = new AlertDialog.Builder( AddTarefaRapida.this );
+                    dialog.setTitle( getApplicationContext().getResources().getString(R.string.confExclusaoPT) + "\n" );
+                    dialog.setMessage( R.string.desejaExcluirAnotacaoPT2 );
 
-                dialog.setPositiveButton(R.string.simPT, new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
+                    dialog.setPositiveButton(R.string.simPT, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
 
-                        if( dao.deletar( tarefaAtual ) ){
+                            if( dao.deletar( tarefaAtual ) ){
 
-                            finish();
-                            Toast.makeText(getApplicationContext(),
-                                    R.string.tarefaExcluidaPT,Toast.LENGTH_SHORT).show();
+                                finish();
+                                Toast.makeText(getApplicationContext(),
+                                        R.string.tarefaExcluidaPT,Toast.LENGTH_SHORT).show();
 
-                        }else{
-                            Toast.makeText(getApplicationContext(),
-                                    R.string.erroAoExcluirTarefaPT,Toast.LENGTH_SHORT).show();
+                            }else{
+                                Toast.makeText(getApplicationContext(),
+                                        R.string.erroAoExcluirTarefaPT,Toast.LENGTH_SHORT).show();
+                            }
+
                         }
+                    });
 
-                    }
-                });
+                    dialog.setNegativeButton(R.string.naoPT, null);
 
-                dialog.setNegativeButton(R.string.naoPT, null);
+                    dialog.create().show();
 
-                dialog.create().show();
+                }
+                else { // se a tarefa nao existir
+                    Toast.makeText(getApplicationContext(),
+                            R.string.paraDeletarPrecisaSalvarPT,
+                            Toast.LENGTH_SHORT).show();
+                }
+            }else {
+                List<Tarefa_Rapida> lista = new ArrayList<>();
 
-            }
-            else { // se a tarefa nao existir
-                Toast.makeText(getApplicationContext(),
-                        R.string.paraDeletarPrecisaSalvarPT,
-                        Toast.LENGTH_SHORT).show();
+                lista = dao.verificarTarefa( cont );
+
+                if( !lista.isEmpty() ) {
+
+                    AlertDialog.Builder dialog = new AlertDialog.Builder( AddTarefaRapida.this );
+                    dialog.setTitle( getApplicationContext().getResources().getString(R.string.confExclusaoPT) + "\n" );
+                    dialog.setMessage( R.string.desejaExcluirAnotacaoPT2 );
+
+                    dialog.setPositiveButton(R.string.simPT, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+
+                            if( dao.deletar( tarefaAtual ) ){
+
+                                finish();
+                                Toast.makeText(getApplicationContext(),
+                                        R.string.tarefaExcluidaPT,Toast.LENGTH_SHORT).show();
+
+                            }else{
+                                Toast.makeText(getApplicationContext(),
+                                        R.string.erroAoExcluirTarefaPT,Toast.LENGTH_SHORT).show();
+                            }
+
+                        }
+                    });
+
+                    dialog.setNegativeButton(R.string.naoPT, null);
+
+                    dialog.create().show();
+
+                }
+                else { // se a tarefa nao existir
+                    Toast.makeText(getApplicationContext(),
+                            R.string.paraDeletarPrecisaSalvarPT,
+                            Toast.LENGTH_SHORT).show();
+                }
             }
         }
         else { // se a tarefa nao existir

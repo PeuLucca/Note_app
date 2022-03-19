@@ -53,6 +53,12 @@
         />
 
     <item
+        android:id="@+id/itemSenhas"
+        android:title="@string/filtrarTarefasComSenhas"
+        android:orderInCategory="1"
+        />
+
+    <item
         android:id="@+id/avaliar"
         android:title="@string/avalie_o_App_estrelinhas"
         android:orderInCategory="1"

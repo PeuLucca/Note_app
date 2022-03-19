@@ -26,6 +26,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
 
+    <!--app:layout_constraintTop_toBottomOf="@+id/adView"-->
+
     <EditText
         android:id="@+id/txtTitulo"
         android:layout_width="0dp"
@@ -41,6 +43,7 @@
         android:textColor="@color/black"
         android:textColorHint="#494949"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/adView" />
 
@@ -75,12 +78,14 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
         app:adSize="BANNER"
-        app:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:adUnitId="ca-app-pub-7747051371053225/8591943910"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
         <!-- id de teste: ca-app-pub-3940256099942544/6300978111
+        	id de producao: ca-app-pub-7747051371053225/8591943910
               -->
     </com.google.android.gms.ads.AdView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

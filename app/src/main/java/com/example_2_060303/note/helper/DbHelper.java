@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 
 public class DbHelper extends SQLiteOpenHelper {
 
-    public static int VERSION_DB = 4;
+    public static int VERSION_DB = 5; // versão de produção --> 4
     public static String NOME_DB = "db_note";
 
     public static String TABELA_TAREFA = "tarefa";
@@ -24,7 +24,9 @@ public class DbHelper extends SQLiteOpenHelper {
             "conteudo TEXT NOT NULL, " +
             "data TEXT, " +
             "horario TEXT, " +
-            "favoritar INTEGER);";
+            "favoritar INTEGER, " +
+            "senha TEXT DEFAULT ''," +
+            "dicaSenha TEXT DEFAULT '');";
 
     private static final String sqlCriarTarefaRapida =
             "CREATE TABLE IF NOT EXISTS " + TABELA_TAREFA_RAPIDA +
@@ -38,9 +40,14 @@ public class DbHelper extends SQLiteOpenHelper {
     private static final String sqlAddFavorito = "ALTER TABLE " + TABELA_TAREFA + "" +
             " ADD COLUMN favoritar INTEGER;";
 
+    private static final String sqlAddSenha = "ALTER TABLE " + TABELA_TAREFA +
+            " ADD COLUMN senha TEXT DEFAULT '';";
+
+    private static final String sqlAddDicaSenha = "ALTER TABLE " + TABELA_TAREFA +
+            " ADD COLUMN dicaSenha TEXT DEFAULT '';";
+
     public DbHelper(@Nullable Context context) {
         super(context, NOME_DB, null, VERSION_DB);
-         //context.deleteDatabase(NOME_DB);
     }
 
     @Override
@@ -69,6 +76,10 @@ public class DbHelper extends SQLiteOpenHelper {
             }
             if( oldVersion < 4 ){
                 db.execSQL( sqlCriarTarefaRapida );
+            }
+            if( oldVersion < 5 ){
+                db.execSQL( sqlAddSenha );
+                db.execSQL( sqlAddDicaSenha );
             }
 
         }catch (Exception e){

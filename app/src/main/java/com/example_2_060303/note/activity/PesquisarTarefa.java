@@ -39,7 +39,7 @@ public class PesquisarTarefa extends AppCompatActivity {
 
         lista = (List<Tarefa>) getIntent().getSerializableExtra("tarefa");
 
-        adap = new AdapterTarefa(lista,getApplicationContext());
+        adap = new AdapterTarefa( lista , getApplicationContext() );
 
         carregarLista();
 
@@ -102,7 +102,7 @@ public class PesquisarTarefa extends AppCompatActivity {
 
         // listar as tarefas salvas
         DaoTarefa dao = new DaoTarefa(getApplicationContext());
-        lista = dao.listar( "status" );
+        lista = dao.listarTarefasSemSenha();
 
         adap = new AdapterTarefa(lista,getApplicationContext());
 
